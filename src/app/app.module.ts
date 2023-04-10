@@ -9,6 +9,12 @@ import { NewsUpdatesComponent } from './news-updates/news-updates.component';
 import { FacultyComponent } from './faculty/faculty.component';
 import { AdmissionComponent } from './admission/admission.component';
 import { ContactComponent } from './contact/contact.component';
+import { Frame1Component } from './frame1/frame1.component';
+import { FooterComponent } from './footer/footer.component';
+import { Frame2Component } from './frame2/frame2.component';
+import { Frame3Component } from './frame3/frame3.component';
+import { Frame4Component } from './frame4/frame4.component';
+import { Frame5Component } from './frame5/frame5.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +24,13 @@ import { ContactComponent } from './contact/contact.component';
     NewsUpdatesComponent,
     FacultyComponent,
     AdmissionComponent,
-    ContactComponent
+    ContactComponent,
+    Frame1Component,
+    FooterComponent,
+    Frame2Component,
+    Frame3Component,
+    Frame4Component,
+    Frame5Component
   ],
   imports: [
     BrowserModule,

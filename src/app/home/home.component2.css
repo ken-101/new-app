@@ -1,0 +1,76 @@
+@media screen and (min-width: 1000px) {
+  .nav-toggle-label {
+    display: none;}
+  header {
+    display: grid;
+    grid-template-columns: 3fr auto minmax(600px, 3fr) 1fr;}
+  .top-left2 {
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px black;
+    color: rgb(0, 0, 0);
+    padding: 5px 8px 5px 8px;
+    margin: 0 5px 0 20px;
+  font-weight: 800;}
+  .top-left2:hover{
+    opacity: 70%;}
+  nav {
+    /* the following lines are not from my video, but add Edge support */
+    position: relative;
+    text-align: left;
+    transition: none;
+    transform: scale(1,1);
+    background: none;
+    top: initial;
+    left: initial;
+    /* end Edge support stuff */
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;}
+  nav ul {
+    display: flex;}
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;}
+  nav a {
+    opacity: 1;
+    position: relative;}
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background: black;
+    position: absolute;
+    top: -.75em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;}
+  nav a:hover::before {
+    transform: scale(1,1);}
+  /* media (pc) about us style start */
+  .no, .abtus, .abtus2{
+    justify-content: center;}
+  .no{
+    display: flex;
+    margin: 6.4px 125px 0 0;
+    padding: 0 0 10px 0;
+    position: absolute;
+    display: none;
+    gap: 70px;
+    background-color: #fd2424d9;
+    z-index: 3;}
+  .op:focus-within .no {
+    display: grid;
+    grid-template-columns: 150px;}
+  .abtus{
+    display: flex;
+    top: 0;}
+  .abtus2{
+    display: flex;
+    margin: 10px 0 0 0;
+    padding: 0;}
+}

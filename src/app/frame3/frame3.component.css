@@ -1,0 +1,108 @@
+.snaps-inline {
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: var(--_spacer, 1rem);} 
+.snaps-inline > * {
+  scroll-snap-align: center;}
+
+.time{
+  display: flex;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 20px 0 40px 0;}
+.event{
+  margin: 30px 30px;
+  border: 1px white solid;}
+.event-1{
+  display: flex;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 20px 0 40px 0;}
+.event-2{
+  background-color: rgba(133, 0, 0, 0.8);
+  display: grid;
+  text-align: center;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  overflow-x: auto;
+  padding: 10px 10px 10px 10px;
+  margin: 0 10px;
+  gap: 40px;
+  border-radius: 10px;
+  overscroll-behavior-inline: contain ;}
+.event-box{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  width: 200px;
+  height: 80px;}
+  .event-date, .event-text{
+    display: flex;
+    align-items: center;
+  }
+.event-date{
+  background-color: #E74141;}
+.event-text{
+  background-color: #fff8f8;}
+
+.announcement{
+  margin: 0 30px;
+  border: 1px white solid;}
+.announcement-1{
+  display: flex;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 20px 0 40px 0;}
+.announcement-2{
+  background-color: rgba(133, 0, 0, 0.8);
+  display: grid;
+  text-align: center;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  overflow-x: auto;
+  padding: 10px 10px 10px 10px;
+  margin: 0 10px;
+  gap: 40px;
+  border-radius: 10px;
+  overscroll-behavior-inline: contain ;
+}
+.announcement-box{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  width: 200px;
+  height: 80px;
+}
+.announcement-date{
+  display: flex;
+  align-items: center;
+  background: #D9D9D9;
+}
+.announcement-text{
+  display: flex;
+  align-items: center;
+  background-color: #fff8f8;
+}
+
+@media screen and (min-width: 1000px) {
+  .event-3, .announcement-3{
+    display: flex;
+    justify-content: right;
+    padding: 1rem 4rem 1rem 0;}
+  .event-link, .announcement-link{
+    font-size: 20px;}
+}
+
+@media screen and (max-width: 1000px) {
+  .event-3, .announcement-3{ 
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;}
+  
+}
